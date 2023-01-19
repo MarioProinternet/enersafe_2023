@@ -13,21 +13,21 @@ html {
   }
 }
 
-span{
-    color: #82AF44;
+span {
+  color: #82af44;
 }
 
-.pb-40{
-    padding-bottom: 40px;
+.pb-40 {
+  padding-bottom: 80px;
 }
-.pt-40{
-    padding-top: 40px;
+.pt-40 {
+  padding-top: 80px;
 }
-.pb-80{
-    padding-bottom: 80px;
+.pb-80 {
+  padding-bottom: 80px;
 }
-.pt-80{
-    padding-top: 80px;
+.pt-80 {
+  padding-top: 80px;
 }
 
 .navbar {
@@ -40,10 +40,12 @@ span{
   color: #232323;
   box-shadow: none;
   outline: none;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
 }
-.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active {
-  background-color: #193C75;
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active {
+  background-color: #193c75;
   color: #fff !important;
   outline: none;
   box-shadow: none;
@@ -57,54 +59,63 @@ span{
   background: url(img/bg.png);
   background-position: center center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 #banner2 {
-  background: url(img/blue-bg.png);
+  background-color: #0b1a32;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23132E5A' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23193C75'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
   height: 300px;
 }
 
-@media screen and (max-width:992px){
-    #banner{
-        padding-top: 40px;
-    }
+.gray-bg {
+  background-color: #f6f6f6;
+}
+@media screen and (max-width: 992px) {
+  #banner {
+    padding-top: 40px;
+  }
 }
 
-ul.icons{
-    list-style: none;
-    padding-left: 0;
+ul.icons {
+  list-style: none;
+  padding-left: 0;
 }
-ul.icons li::before{
-    font-family: "Font Awesome 6 Free";
-    content: "\f058";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #82AF44;
-    margin-right: 5px;
+ul.icons li::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f058";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #82af44;
+  margin-right: 5px;
 }
-
-.form-control{
-    background-color: #F3F3F3;
-    border-radius: none;
-    border: none;
-    color: #777777;
-}
-.form-control:active, .form-control:focus{
-    background-color: #F3F3F3;
-    outline: none;
-    box-shadow: none;
+ul.icons li {
+  display: flex;
 }
 
-footer{
-    background: #626262;
-    padding: 20px 0;
-    text-align: center;
+.form-control {
+  background-color: #e7e7e7;
+  border-radius: none;
+  border: none;
+  color: #777777;
+}
+.form-control:active,
+.form-control:focus {
+  background-color: #f3f3f3;
+  outline: none;
+  box-shadow: none;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    color: #82AF44;
+footer {
+  background: #0B1A32;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #82af44;
 }
